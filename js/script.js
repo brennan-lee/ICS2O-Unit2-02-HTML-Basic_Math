@@ -10,3 +10,4 @@
  */
 function calculate () {
   document.getElementById("multiply-math").innerHTML = "<p> 5 × 3 = " + "</p>"
+}
