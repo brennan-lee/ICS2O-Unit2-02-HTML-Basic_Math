@@ -10,4 +10,5 @@
  */
 function calculate() {
   document.getElementById("multiply-math").innerHTML = "<p> 5 × 3 = " + "</p>"
+  document.getElementById("multiply-math").innerHTML = "<p>2(5+3) = " + "</p>" 
 }
