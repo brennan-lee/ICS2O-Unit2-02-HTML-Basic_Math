@@ -4,18 +4,20 @@
 // Created on: Sep 2020
 // This file contains the JS functions for index.html
 
+'use strict'
 /**
- * Do basic math.
+ * This function calculates area and perimeter of rectangle.
  */
-function doMathClicked() {
-  document.getElementById("add-math").innerHTML =
-    "<p>6 + 5 = " + (6 + 5) + "</p>"
-  document.getElementById("subtract-math").innerHTML =
-    "<p>7 - 3 =  " + (7 - 3) + "</p>"
-  document.getElementById("multiply-math").innerHTML =
-    "<p>3 + 4 × 2 = " + (3 + 4 * 2) + "</p>"
-  document.getElementById("divide-math").innerHTML =
-    "<p>(4 ÷ 2) + 3 = " + (4 / 2 + 3) + "</p>"
-  document.getElementById("exponent-math").innerHTML =
-    "<p>5 + 2³ = " + (5 + 2 ** 3) + "</p>"
+function calculate () {
+  // input
+  const length = parseInt(document.getElementById('length-of-rectangle').value)
+  const width = parseInt(document.getElementById('width-of-rectangle').value)
+
+  // process
+  const area = length * width
+  const perimeter = 2 * (length + width)
+
+  // output
+  document.getElementById('area').innerHTML = 'Area is: ' + area + ' cm²'
+  document.getElementById('perimeter').innerHTML = 'Perimeter is: ' + perimeter + ' cm'
 }
