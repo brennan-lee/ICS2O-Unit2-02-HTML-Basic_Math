@@ -9,4 +9,4 @@
  * This function calculates area and perimeter of rectangle.
  */
 function calculate () {
-  document.getElementById("multiply-math").innerHTML = "<p> 5 × 3 = ";"</p>"
+  document.getElementById("multiply-math").innerHTML = "<p> 5 × 3 = " + "</p>"
